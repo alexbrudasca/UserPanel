@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background: rgb(93, 92, 95);
+    overflow-x: hidden;
+    font-family: "Poppins",sans-serif;
+}
+
+.container{
+    color: #fff;
+    width: 100%;
+
+    /* overflow: hidden; */
+    position: relative;
+}
+.side-bar li{
+    color: antiquewhite;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+.side-bar li:hover{
+    color: azure;
+    height: 100%;
+}
+.side-bar{
+    background: #333;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    position: fixed;
+
+    margin: 0 auto;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.20);
+}
+.side-bar:hover{
+    width: 200px;
+}
+.side-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 2rem;
+}
+.log-out{
+    margin-top: 21rem;
+}
+.log-out li{
+    margin-top: 165px;
+}
+
+.hidden{
+    display: none;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:15px ;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin:  auto;
+    width:calc(100% + 50px);
+}
+
+.wrapper div{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    border-radius: 10px;
+    background: antiquewhite;
+}
+.wrapper div:nth-of-type(1){
+    width: 400px;
+}
+.toggle-theme{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 100px;
+    height: 30px;
+    /* background: #fff; */
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background: #333;
+    display: flex;
+    justify-content: flex-end; /* Move the label to the right */
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; /* Hide the overflow of the label */
+}
+label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #fff;
+    position: absolute;
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth movement */
+    left: 0; /* Initially position the label on the left */
+    top: 0;
+}
+
+input[type="checkbox"]:checked + label {
+    transform: translateX(110%);
+}
+
+
+.footer{
+    padding: 15px;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    gap: 250px;
+}
+
+.links ul{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 15px;
+    justify-content: space-around;
+}
+.about p{
+    width:300px;
+    text-align: center;
+}
+
+.sm i{
+    font-size: 20px;
+    color: aliceblue;
+    
+}
+
+.sm{
+    display: flex;
+    gap: 15px;
+}
+
+.upArrow{
+    width: 30px;
+    height: 30px;
+    background: #5d5c5f;
+    color: #fff;
+    z-index: 99;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.upArrow i{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+}
+
+.images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding-bottom: 5rem;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 300px;
+}
+.images img{
+    width: 500px;
+    height: 300px;
+}
+.images h1{
+    color: antiquewhite;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+}
+.text{
+    padding: 150px;
+}

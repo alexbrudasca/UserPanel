@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+      integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-theme">
+        <input type="checkbox" />
+        <label for="checkbox"></label>
+      </div>
+      <div class="side-bar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i>
+            <span class="test hidden">Home</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-address-card"></i>
+            <span class="test hidden">About</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <span class="test hidden">Contact</span>
+          </li>
+        </ul>
+        <ul class="log-out">
+          <li>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span class="test hidden">Log Out</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <div class="wrapper">
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          <div></div>
+          <div>
+            <canvas id="myChartTwo"></canvas>
+          </div>
+        </div>
+        <div class="images">
+          <h1>
+            Welcome back to <br />
+            your statistics
+          </h1>
+          <img src="/undraw_users_per_minute_018v.svg" alt="" />
+        </div>
+
+        <div class="text">
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum
+            esse amet saepe, veritatis repellendus perspiciatis? Doloribus
+            eaque, deleniti voluptate rerum minima cupiditate provident totam
+            reiciendis eum expedita quidem dolorem laboriosam, doloremque error,
+            aliquid accusamus quisquam perferendis earum eveniet iure. Assumenda
+            dicta ea repellendus eaque. Numquam, accusantium. Sequi architecto
+            rerum voluptatum illo. Dolor laboriosam suscipit numquam harum
+            perferendis a deserunt hic illum iste excepturi, pariatur corrupti.
+            Saepe, facere asperiores doloremque omnis soluta voluptatibus, optio
+            nisi expedita molestias rem fugit? Nobis sit et repellat nemo
+            tempore! Quae minima modi alias eligendi, nesciunt voluptate
+            assumenda atque, iure natus, harum ratione corporis
+            accusantium!</span
+          >
+        </div>
+
+        <div class="footer">
+          <div class="links">
+            <ul>
+              <li>Home</li>
+              <li>Contact</li>
+              <li>About</li>
+            </ul>
+          </div>
+
+          <div class="about">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              odio molestiae quis veritatis eos quas!
+            </p>
+          </div>
+
+          <div class="sm">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="upArrow">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
